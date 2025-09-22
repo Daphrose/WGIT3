@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Golden Spoon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="main-header">
+    <h1 class="logo">The Golden Spoon</h1>
+
+    <button class="hamburger" aria-label="Toggle menu">☰</button>
+
+    <!-- Use class instead of id -->
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Menu</a>
+      <a href="#">Reservations</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main class="main_class">
+    <section class="welcome">
+      <h2>Welcome to The Golden Spoon</h2>
+      <p>Experience fine dining with a touch of elegance.</p>
+    </section>
+
+    <section class="menu">
+      <h2>Sample Menu</h2>
+      <ul>
+        <li>Grilled Salmon with Lemon Butter</li>
+        <li>Herb-Crusted Lamb Chops</li>
+        <li>Wild Mushroom Risotto</li>
+        <li>Classic Tiramisu</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="paragraph">
+            <p>📍 123 Flavor Street, Nairobi</p>
+            <p>📞 +254 700 123 456</p>
+            <p>✉️ contact@goldenspoon.com</p>
+    </div>
+  </footer>
+
+  <script>
+    // toggle menu visibility
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
