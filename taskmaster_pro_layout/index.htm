@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskMaster Pro</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+ <header class="navbar">
+  <div class="logo">TaskMaster Pro</div>
+
+  <!-- Hamburger Menu Button -->
+  <button class="hamburger" id="hamburger">
+    ☰
+  </button>
+
+  <nav id="nav-menu">
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <a href="#" class="btn signup-btn">Sign Up</a>
+</header>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Master Your Tasks with TaskMaster Pro</h1>
+      <p>The ultimate productivity tool to organize, track, and achieve your goals faster.</p>
+      <a href="#" class="btn primary-btn">Get Started</a>
+    </div>
+    <div class="hero-image">
+      <img src="D:\WGIT2\taskmaster_pro_layout\images\task.png" alt="Task management illustration">
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <h2>Why Choose TaskMaster Pro?</h2>
+    <div class="feature-cards">
+      <div class="card">
+        <h3>Smart Scheduling</h3>
+        <p>Plan your tasks effortlessly with AI-powered smart scheduling.</p>
+      </div>
+      <div class="card">
+        <h3>Collaboration</h3>
+        <p>Work together with your team in real-time, from anywhere.</p>
+      </div>
+      <div class="card">
+        <h3>Analytics</h3>
+        <p>Track progress and boost productivity with detailed insights.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <p>© 2025 TaskMaster Pro. All rights reserved.</p>
+  </footer>
+</body>
+<script >
+    const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav-menu");
+
+hamburger.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+});
+</script>
+</html>
